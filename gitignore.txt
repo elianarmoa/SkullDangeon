@@ -1,0 +1,21 @@
+node_modules/
+dist/
+build/
+.env
+*.log
+# Archivos temporales o de sistema
+.DS_Store
+Thumbs.db
+
+# Configuraciones locales y logs
+*.log
+*.tmp
+*.bak
+
+# Archivos sospechosos o innecesarios
+7.0.400_*
+*.isdockercontainer
+
+# Si usas algún framework o bundler (como Webpack o Vite), excluye también:
+dist/
+build/

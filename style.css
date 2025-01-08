@@ -1,0 +1,269 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Agregar una transición a las secciones */
+section {
+    transition: transform 1s ease-out; /* Controla la suavidad de la animación al cambiar de sección */
+}
+
+
+
+
+.image-main{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: auto;
+    height: 70vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+    z-index: 0;
+}
+.image-main img { height: 100%; }
+
+.card{
+    width: 100%;
+    min-height: 350px;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(90%);
+    transition: all .2s ease-in-out;
+    z-index: -1;
+}
+.card .content { display: none; }
+.card:hover .content{
+    width: 100%;
+    height: 100%;
+    padding: var(--distance-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 10;
+}
+.card:hover img { filter: brightness(20%); }
+
+@media (max-width: 1120px){
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .image-main { transform: translateX(25%); }
+
+}
+@media (max-width: 768px){
+    main.bg-0 { background-color: transparent; }
+    main.grid-2 { grid-template-columns: 1fr; }
+    .image-main{
+        clip-path: none;
+        width: 100%;
+        left: 0;
+        transform: translateX(0);
+        z-index: -1;
+        filter: brightness(30%);
+    }
+}
+/* Carrusel de tecnologías */
+.carousel-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+    transform: scale(1.1);
+}
+
+.carousel-item i {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.carousel-item p {
+    font-size: 1rem;
+    color: var(--text);
+}
+/* Contenedor de recursos */
+.resources-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+/* Estilo de los elementos individuales */
+.resource-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary); /* Color dinámico para los títulos */
+}
+
+.resource-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resource-item ul li {
+    margin-bottom: 10px;
+}
+
+.resource-item ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.resource-item ul li a:hover {
+    color: var(--primary); /* Color en hover */
+    transform: scale(1.05); /* Efecto de agrandado en hover */
+}
+
+/* Efecto hover en los items */
+.resource-item:hover {
+    transform: translateY(-10px); /* Eleva el bloque al hacer hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .resources-container {
+        grid-template-columns: 1fr; /* Muestra en una sola columna en pantallas pequeñas */
+    }
+}
+/* Sección de contacto */
+#contact {
+    background-color: var(--bg-primary); /* Fondo oscuro */
+    padding: 60px 20px;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+/* Títulos */
+#contact h2 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: var(--gray-3);
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* Sección de contacto */
+#contact {
+    background-color: var(--bg-primary); /* Fondo oscuro */
+    padding: 60px 20px;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+/* Títulos */
+#contact h2 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: var(--gray-3);
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* Formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Grupos de campos */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Etiquetas de los campos */
+.form-label {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Campos de entrada */
+.form-input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid var(--gray-2);
+    background-color: var(--gray-1);
+    color: var(--text); /* Color oscuro para el texto dentro de los campos */
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: var(--primary);
+    background-color: var(--gray-3);
+    outline: none;
+    box-shadow: 0 0 5px var(--primary);
+}
+
+/* Botón de envío */
+button[type="submit"] {
+    padding: 12px 30px;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--lt-primary);
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    transform: scale(1);
+}
+

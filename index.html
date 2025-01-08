@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skull Dungeon es un estudio de diseño creativo y desarrollo web. Explora nuestro portfolio y proyectos innovadores.">
+    <title>Skull Dungeon</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="flex column">
+    <!-- Header -->
+    <header id="header" class="min-height-80p bg-2 container flex flex-between align-center pad-block-2">
+        <div class="logo">
+            <img src="images/logos/LOGO-3.png" class="pointer hover-2 width-40p" alt="logo de Skull Dungeon">
+        </div>
+        <nav>
+            <ul class="flex gap-4 align-center">
+                <li class="flex">
+                    <a class="hover-1 p-2" href="#header">Inicio</a>
+                </li>
+                <li class="flex">
+                    <a class="hover-1 p-2" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="flex">
+                    <a class="hover-1 p-2" href="#technologies">Estudio</a>
+                </li>
+                <li class="flex">
+                    <a class="hover-1 p-2" href="#resources">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#contact" class="button button-primary hover-2">Contacto</a>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="bg-0 container grid grid-2 gap-4 align-center height-70 relative">
+        <div class="flex column flex-center gap-3">
+            <h1 class="title white">Skull Dungeon</h1>
+            <p class="text op-5">Bienvenidos a Skull Dungeon, un lugar donde la creatividad y el diseño se encuentran.</p>
+            <a href="https://open.spotify.com/intl-es/track/5lRGsF9rIta5p6S1CGBuwr" class="m-top-3 button button-primary hover-2 width-content">Explorar</a>
+        </div>
+        <picture class="image-main">
+            <source srcset="images/stock/project1/a2.webp" type="image/webp">
+            <img src="images/stock/project1/a1.jpg" alt="Imagen principal de Skull Dungeon">
+        </picture>
+    </main>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container p-bottom-5">
+        <h2 class="text-center p-block-5">Nuestro Portfolio</h2>
+        <div class="width-100 grid grid-2 gap-4 align-center">
+            <!-- Card 1 -->
+            <div class="card width-100 height-100 hidden radius-2">
+                <img class="height-100" src="images/stock/project1/a4.png" alt="Proyecto 1">
+                <div class="content flex column gap-2">
+                    <h3 class="size-3">Proyecto 1</h3>
+                    <p class="max-width-65 op-5">Explora el diseño y la creatividad detrás de nuestro primer proyecto destacado.</p>
+                    <a class="lt-primary" href="https://video.fastly.steamstatic.com/store_trailers/257075324/movie480_vp9.webm?t=1732209325">Ver más</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card width-100 height-100 hidden radius-2">
+                <img class="height-100" src="images/stock/project2/a2.jpg" alt="Proyecto 2">
+                <div class="content flex column gap-2">
+                    <h3 class="size-3">Proyecto 2</h3>
+                    <p class="max-width-65 op-5">Un vistazo a otro ejemplo de nuestra experiencia en diseño innovador.</p>
+                    <a class="lt-primary" href="https://es.stardewvalleywiki.com/Stardew_Valley_Wiki">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container p-bottom-5">
+        <h2 class="text-center p-block-5">Sobre Nosotros</h2>
+        <p class="text-center op-5">
+            En Skull Dungeon, somos un estudio de videojuegos de prestigio con más de 10 años de experiencia en la creación de mundos digitales. Nos especializamos en desarrollar juegos innovadores y envolventes que combinan tecnología avanzada con narrativas únicas. Nuestro equipo está formado por diseñadores, programadores y creativos apasionados que trabajan juntos para llevar a los jugadores a nuevas aventuras emocionantes. Desde títulos de acción hasta juegos de rol inmersivos, Skull Dungeon se ha ganado un lugar en el corazón de la comunidad gamer a través de nuestra dedicación y creatividad.
+        </p>
+    </section>
+
+    <!-- Tecnologías que utilizamos -->
+    <section id="technologies" class="container p-bottom-5">
+        <h2 class="text-center p-block-5">Tecnologías que Utilizamos</h2>
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <i class="fab fa-html5 fa-3x"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="carousel-item">
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="carousel-item">
+                <i class="fab fa-js-square fa-3x"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="carousel-item">
+                <i class="fab fa-react fa-3x"></i>
+                <p>React</p>
+            </div>
+            <div class="carousel-item">
+                <i class="fab fa-node fa-3x"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="carousel-item">
+                <i class="fab fa-git fa-3x"></i>
+                <p>Git</p>
+            </div>
+        </div>
+    </section>
+    <section id="resources" class="container p-bottom-5">
+        <h2 class="text-center p-block-5">Artículos y Recursos para Desarrolladores</h2>
+        <div class="resources-container grid grid-2 gap-4">
+
+            <!-- Artículos destacados -->
+            <div class="resource-item">
+                <h3 class="size-2">Artículos Destacados</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide" target="_blank">Guía de JavaScript - MDN</a></li>
+                    <li><a href="https://reactjs.org/docs/getting-started.html" target="_blank">Documentación oficial de React</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks: Todo sobre CSS</a></li>
+                    <li><a href="https://dev.to/" target="_blank">DEV.to - Comunidad de desarrolladores</a></li>
+                </ul>
+            </div>
+            
+            <!-- Recursos y tutoriales -->
+            <div class="resource-item">
+                <h3 class="size-2">Recursos y Tutoriales</h3>
+                <ul>
+                    <li><a href="https://freecodecamp.org" target="_blank">freeCodeCamp - Aprendizaje gratuito de desarrollo web</a></li>
+                    <li><a href="https://www.codecademy.com/" target="_blank">Codecademy - Tutoriales interactivos</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy - Cursos de desarrollo</a></li>
+                    <li><a href="https://www.coursera.org/" target="_blank">Coursera - Cursos de desarrollo web</a></li>
+                </ul>
+            </div>
+            
+            <!-- Herramientas y bibliotecas -->
+            <div class="resource-item">
+                <h3 class="size-2">Herramientas y Bibliotecas</h3>
+                <ul>
+                    <li><a href="https://webpack.js.org/" target="_blank">Webpack - Empaquetador de módulos</a></li>
+                    <li><a href="https://git-scm.com/" target="_blank">Git - Control de versiones</a></li>
+                    <li><a href="https://nodejs.org/" target="_blank">Node.js - JavaScript del lado del servidor</a></li>
+                    <li><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS - Framework CSS</a></li>
+                </ul>
+            </div>
+    
+            <!-- Comunidad y Foros -->
+            <div class="resource-item">
+                <h3 class="size-2">Comunidad y Foros</h3>
+                <ul>
+                    <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow - Preguntas y respuestas para desarrolladores</a></li>
+                    <li><a href="https://www.reddit.com/r/webdev/" target="_blank">Reddit: r/webdev - Comunidad de desarrollo web</a></li>
+                    <li><a href="https://www.hashnode.com/" target="_blank">Hashnode - Plataforma de blogs para desarrolladores</a></li>
+                    <li><a href="https://www.gitlab.com/" target="_blank">GitLab - Plataforma de colaboración en código</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Sección de Contacto -->
+    <section id="contact" class="container p-bottom-5 bg-0">
+        <h2 class="text-center p-block-5">Contáctanos</h2>
+        <p class="text-center op-5">Si tienes alguna pregunta o sugerencia, no dudes en enviarnos un mensaje. ¡Nos encantaría saber tu opinión!</p>
+        
+        <form id="contact-form" action="#" method="POST" class="contact-form flex column gap-4 width-100 max-width-600 m-auto">
+            <div class="form-group">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" id="subject" name="subject" placeholder="Asunto de tu mensaje" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." class="form-input" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="button button-primary hover-2 width-content">Enviar Mensaje</button>
+        </form>
+    </section>
+</body>
+</html>

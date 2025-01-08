@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "background-color: color-mix(in srgb, var(--bg-primary), #fff 5%)",
+          "background-color: color-mix(in srgb, var(--primary), #000 25%)",
+          "background-color: color-mix(in srgb, inherit, #000 25%)"
+        ]
+      }
+    ],
+    "disown-opener": "off"
+  }
+}

@@ -7,9 +7,6 @@ section {
     transition: transform 1s ease-out; /* Controla la suavidad de la animación al cambiar de sección */
 }
 
-
-
-
 .image-main{
     position: absolute;
     top: 0;
